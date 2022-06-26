@@ -74,14 +74,14 @@ p {
 
 /* nav bar link hovers */
 .topnav a:hover {
-    background-color: #1B5886;
+    background-color: #36454F;
     color: #ffffff; 
     height: 74px;
 }
 
 /* home button */
 .topnav a.active {
-    background-color: #36454F;
+    background-color: #1B5886;
     color: #ffffff;
     height: 74px; 
 }
