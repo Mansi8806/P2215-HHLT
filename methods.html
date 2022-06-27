@@ -61,6 +61,34 @@
   
 <!-- line break -->
 <hr>
+
+<div class="methods-summary" class="website">
+    <h2>Northern Bog Aster Habitat Suitability Analysis.</h2>
+    <p> The study area selected for this analysis was an area that surrounded and 
+	included Queen Elizabeth II Wildlands Provincial Park which is partly within Haliburton County.
+	3 criterias were selected to perform the analysis; wetland areas, aspect or direction of the ground surface
+	and the urban development in the area which is divided into sections, one is urban landuse 
+	(this includes industrial, residential, cemetery, retail, and quarry areas) and other is Roads infrastructure. 
+	Wetlands being the most dominant for this plant's growth was given the weightage of 40% and other two were given 30% each. 
+	Therefore, 15% each divided amoungst two categories of urban development.</p>
+	
+	<p>Each suitability surface for each criteria were obtained using the various geoprocessing tools of ArcGIS Pro like merge, buffer, dissolve, euclidean distance and reclassify. 
+	The workflow for one such urban lanuse criteria in model builder is shown in figure below. 
+	Then Weighted Overlay tool was used at last to specify weightage to all criterias and 
+	finally obtain the habitat suitability surface.</p>
+	<img src="images/nbamb.png" alt="Urban Landuse Criteria Workflow">
+	
+        <p>Suitability definition for suitability ratings from 1 to 7 where 7 is assigned the most suitable value and 1 being the 
+	least suitable for plant growth is shown in figure below.</p>
+        <img src="images/sdtable.png" alt="Suitability definition table">
+  
+        <h1>Visualization</h1>
+       <p>To create a map poster of size 34x44 inches in landscape orientation, layout was prepared to position the map elements. 
+	  Then facts and basic information was found out for Rush aster plant. A local scene map in ArcGIS Pro was created to show all 4 criteria’s suitability surfaces in 3D view giving 10x vertical exaggeration as 
+	  there is not much of the difference in elevation in the study area.To create an interactive element, icon drawings of all 4 criteria were done in Adobe Illustrator as shown in figure here.
+	  Lastly, charts and threaded table was created to show analysis results and summarize the information.</p>
+          <img src="images/icon.png" alt="Adobe Illustrator Icons">
+  </div>	
 	
 </section>
 </main>
