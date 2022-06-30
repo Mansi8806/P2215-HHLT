@@ -12,6 +12,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- style sheet link --> 
   <link rel="stylesheet" href="CSS/style.css">  
+  <style>
+ 
+    /* Set display to none for image*/
+    #image {
+        display: none;
+    }
+</style>
 </head>
 
 <!-- beginning of the body -->
@@ -55,9 +62,27 @@
 	Satellite name, date, source and whether the image is orthorectified or not. We have documented a general Habitat suitability analysis workflow of one of 
 	 the property named Barnum Creeek Nature Reserve owned by Haliburton county.
     At the end we have created some good quality and appealing maps from the results to show outputs of Spatial Analysis workflows. 
-	   Apart from this there is guide made to refer how different remote sensing softwares can used for different analysis. 
-	</p>
+	   Apart from this there is guide made to refer how different remote sensing softwares can used for different analysis.</p> 
+     
+  <img id ="image" src="images/output.svg" width="1200" height="900">
   </div>
+  <div class="container-name">
+    <a class="example_e" onclick="show()" id="btnID" rel="nofollow">
+      <span>click here for carto map</span>
+    </a>
+  </div>
+  <script>
+    function show() {
+
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image')
+                .style.display = "block";
+
+        document.getElementById('btnID')
+                .style.display = "none";
+    }
+</script>
     <!-- end of solution summary section -->
   
 <!-- line break -->
